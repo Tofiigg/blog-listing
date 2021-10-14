@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header class="fixed-top">
+    <section id="custom-navbar" class="py-2 opacity-75">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="container-fluid px-0">
+                <a class="navbar-brand" href="#">
+                  <img src="img/logo-white.png" alt="" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown px-1 px-xl-3">
+                      <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Home
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <hr class="dropdown-divider" />
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item dropdown px-1 px-xl-3">
+                      <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Listing
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <hr class="dropdown-divider" />
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown px-1 px-xl-3">
+                      <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        User panel
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <hr class="dropdown-divider" />
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown px-1 px-xl-3">
+                      <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Page
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <hr class="dropdown-divider" />
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown px-1 px-xl-3">
+                      <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Session
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <hr class="dropdown-divider" />
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex d-none d-lg-flex">
+                    <a class="btn btn-success rounded-pill px-4 py-2" href="#">
+                      ADD LISTING+
+                    </a>
+                  </form>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main>
+
+    <section id="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-between">
+            <div class="title text-white">
+              <h1>Blog Listing</h1>
+              <p>Explore your search places</p>
+            </div>
+            <div class="custom-breadcrumb d-flex align-items-center">
+              <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="#" class="text-white text-decoration-none">Home</a>
+                  </li>
+                  <li class="breadcrumb-item text-white" aria-current="page">
+                    Library
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="row justify-content-center">
+        <div class="col-6">
+
+          <div class="card w-100" style="width: 18rem;">
+            <img src=http://directlist.trendsetterthemes.org/assets/images/dp-3.jpg class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Take a Look at Hotels for All Budgets</h5>
+              <h6 class="card-subtitle mb-2 text-muted">22 August 2018</h6>
+              <p class="card-text">Sed sed tristique nibh iam porta volutpat finibus. Donec in aliquet urneget mattis
+                lorem. Pellentesque pellentesque.</p>
+              <button class="btn btn-primary" type="submit">Read More</button>
+            </div>
+
+
+          </div>
+          <div class="card w-100" style="width: 18rem;">
+            <img src=http://directlist.trendsetterthemes.org/assets/images/dp-4.jpg class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Take a Look at Hotels for All Budgets</h5>
+              <h6 class="card-subtitle mb-2 text-muted">22 August 2018</h6>
+              <p class="card-text">Sed sed tristique nibh iam porta volutpat finibus. Donec in aliquet urneget mattis
+                lorem. Pellentesque pellentesque.</p>
+              <button class="btn btn-primary" type="submit">Read More</button>
+            </div>
+
+
+          </div>
+          <div class="card w-100" style="width: 18rem;">
+            <img src=http://directlist.trendsetterthemes.org/assets/images/dp-2.jpg class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Take a Look at Hotels for All Budgets</h5>
+              <h6 class="card-subtitle mb-2 text-muted">22 August 2018</h6>
+              <p class="card-text">Sed sed tristique nibh iam porta volutpat finibus. Donec in aliquet urneget mattis
+                lorem. Pellentesque pellentesque.</p>
+              <button class="btn btn-primary" type="submit">Read More</button>
+            </div>
+
+
+          </div>
+
+
+
+
+        </div>
+        <div class="col-4 pt-5">
+          <div class="input-group mb-3 border py-2 px-3 rounded-3" style="width:250px;">
+            <span class="input-group-text border-0">
+              <i class="fas fa-search"></i>
+            </span>
+            <input type="text" class="form-control border-0 disable-input-glow" placeholder="Search"
+              aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <h5 class="fw-bold posts-title">Popular Posts</h5>
+          <div class="card no-effect mb-3 border-0 my-4" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-3">
+                <img src="http://directlist.trendsetterthemes.org/assets/images/bw-1.jpg" class="img-fluid rounded-3"
+                  alt="...">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body h-100 d-flex flex-column justify-content-center">
+                  <h6 class="card-title fw-bold">
+                    <a href="#">
+                      Hotels for All Budgets
+                    </a>
+                  </h6>
+                  <p class="card-subtitle text-muted">October 26, 2016</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="card no-effect mb-3 border-0 my-4" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-3">
+                <img src="http://directlist.trendsetterthemes.org/assets/images/bw-2.jpg" class="img-fluid rounded-3"
+                  alt="...">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body h-100 d-flex flex-column justify-content-center">
+                  <h6 class="card-title fw-bold">
+                    <a href="#">
+                      The 50 Greatest Street Arts In London
+                    </a>
+                  </h6>
+                  <p class="card-subtitle text-muted">November 9, 2016</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="card no-effect mb-3 border-0 my-4" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-3">
+                <img src="http://directlist.trendsetterthemes.org/assets/images/bw-3.jpg" class="img-fluid rounded-3"
+                  alt="...">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body h-100 d-flex flex-column justify-content-center">
+                  <h6 class="card-title fw-bold">
+                    <a href="#">
+                      The Best Cofee Shops In Sydney Neighborhoods
+                    </a>
+                  </h6>
+                  <p class="card-subtitle text-muted">November 12, 2016</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h5 class="fw-bold posts-title">Social</h5>
+          <div class="d-flex">
+            <a href="#" class="social twitter-bg">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social facebook-bg">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="social dribbble-bg">
+              <i class="fab fa-dribbble"></i>
+            </a>
+            <a href="#" class="social github-bg">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer style="background-color:#5e72e4!important" class="py-4 text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-5 d-flex flex-column">
+          <img src="http://directlist.trendsetterthemes.org/assets/images/logo-white.png" alt="" class="w-25 my-3">
+          <p>Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia
+            tortor morbi ultricies laoreet ullamcorper phasellus semper.</p>
+          <span>
+            12345 Little Lonsdale St, Melbourne
+          </span>
+          <span>
+            Phone: (123) 123-456
+          </span>
+          <a href="mailto:office@example.com" style="color:white !important; text-decoration: none;">
+            <span>
+              E-Mail:office@example.com
+            </span>
+          </a>
+          <div class="d-flex mt-3">
+            <a href="#" class="mx-3" style="color:white !important">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="mx-3" style="color:white !important">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="mx-3" style="color:white !important">
+              <i class="fab fa-dribbble"></i>
+            </a>
+            <a href="#" class="mx-3" style="color:white !important">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-3 d-flex flex-column">
+          <a href="#" class="my-1" style="color:white !important; text-decoration: none !important;">
+            <i class="fas fa-chevron-right"></i>
+            <span>Login</span>
+          </a>
+          <a href="#" class="my-1" style="color:white !important; text-decoration: none !important;">
+            <i class="fas fa-chevron-right"></i>
+            <span>Sign Up</span>
+          </a>
+          <a href="#" class="my-1" style="color:white !important; text-decoration: none !important;">
+            <i class="fas fa-chevron-right"></i>
+            <span>Forgot Password</span>
+          </a>
+          <a href="#" class="my-1" style="color:white !important; text-decoration: none !important;">
+            <i class="fas fa-chevron-right"></i>
+            <span>Add listing</span>
+          </a>
+          <a href="#" class="my-1" style="color:white !important; text-decoration: none !important;">
+            <i class="fas fa-chevron-right"></i>
+            <span>Pricing</span>
+          </a>
+          <a href="#" class="my-1" style="color:white !important; text-decoration: none !important;">
+            <i class="fas fa-chevron-right"></i>
+            <span>About</span>
+          </a>
+        </div>
+        <div class="col-3 d-flex flex-column">
+          <a href="#" class="my-1" style="color:white !important; text-decoration: none !important;">
+            <i class="fas fa-chevron-right"></i>
+            <span>Profile</span>
+          </a>
+          <a href="#" class="my-1" style="color:white !important; text-decoration: none !important;">
+            <i class="fas fa-chevron-right"></i>
+            <span>Blog</span>
+          </a>
+          <a href="#" class="my-1" style="color:white !important; text-decoration: none !important;">
+            <i class="fas fa-chevron-right"></i>
+            <span>Invoice</span>
+          </a>
+          <a href="#" class="my-1" style="color:white !important; text-decoration: none !important;">
+            <i class="fas fa-chevron-right"></i>
+            <span>Booking</span>
+          </a>
+          <a href="#" class="my-1" style="color:white !important; text-decoration: none !important;">
+            <i class="fas fa-chevron-right"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+      </div>
+      <hr>
+      <div class="row text-center py-5">
+        <span>© 2021 DirectList. All Rights Reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+</body>
+
+
+</html>
